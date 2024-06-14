@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Travel Explorer</h1>
+            <ul>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#social">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Explore the World</h2>
+        <p>Discover beautiful destinations around the globe.</p>
+    </section>
+
+    <section id="destinations">
+        <h2>Top Destinations</h2>
+        <div class="gallery">
+            <!-- Add destination images and descriptions here -->
+            <div class="destination">
+                <img src="OIP.jpg" alt="Paris">
+                <h3>Paris</h3>
+            </div>
+            <div class="destination">
+                <img src="image.jpg" alt="New York">
+                <h3>New York</h3>
+            </div>
+            <!-- Add more destinations as needed -->
+        </div>
+    </section>
+
+    <section id="search">
+        <h2>Search Destinations</h2>
+        <input type="text" id="search-bar" placeholder="Search for a destination...">
+    </section>
+
+    <section id="map">
+        <h2>Interactive Map</h2>
+        <div id="map-container">
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+            <!-- Embed a map, for example, using Google Maps API -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.77824427177!2d2.264633583728941!3d48.858938435486145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sin!4v1718358284012!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Trip</h2>
+        <form id="booking-form">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            <label for="dates">Dates:</label>
+            <input type="date" id="dates" name="dates" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="social">
+        <h2>Share Your Experience</h2>
+        <div id="social-media">
+            <!-- Social media links and sharing options -->
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
